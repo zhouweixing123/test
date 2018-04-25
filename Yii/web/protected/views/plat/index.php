@@ -5,13 +5,14 @@
         <div class="w3l-table-info">
             <h2>Basic Implementation</h2>
             <button><a href="<?php echo $this->createUrl('news/add')?>">添加</a></button>
-           
+           <center>   
             <table id="table">
                 <thead>
                 <tr>
                     <th>序号</th>
                     <th>名称</th>
-                    <th>操作</th>
+                <!--     <th>操作</th> -->
+                <th></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -21,12 +22,13 @@
                         <td><?=$v['p_name']?></td>
 
                         <td>
-                            <button><a href="<?php echo $this->createUrl('type/dels')."/id/".$v['p_id']?>">删除</a>
-                                <button><a href="<?php echo $this->createUrl('news/show')."/id/".$v['p_id']?>">展示</a></button>
+<!--                             <button><a href="<?php echo $this->createUrl('type/dels')."/id/".$v['p_id']?>">删除</a>
+                                <button><a href="<?php echo $this->createUrl('news/show')."/id/".$v['p_id']?>">展示</a></button> -->
                         </td>
                     </tr>
                 <?php }?>
                 </tbody>
             </table>
+        </center>
         </div>
     </div>

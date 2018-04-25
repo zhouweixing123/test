@@ -151,6 +151,15 @@ public function actionIndex(){
         $this->render();
 
       }
+      public function actionShow(){
+        // echo "string";
+        $id = Yii::app()->request->getParam('id');
+        // var_dump($id);
+        $sql = "select * from theme where 't_id' =$id";
+        $res = Yii::app()->db->createCommand($sql)->queryAll();
+        var_dump($res);
+
+      }
 
 
 

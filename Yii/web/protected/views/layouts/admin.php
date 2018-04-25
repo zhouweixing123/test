@@ -23,49 +23,39 @@
     <!-- //lined-icons -->
 </head>
 <div class="sidebar-menu">
-					<header class="logo1">
-						<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a>
-					</header>
-						<div style="border-top:1px ridge rgba(255, 255, 255, 0.15)"></div>
-                           <div class="menu">
-									<ul id="menu" >
-										<li><a href="<?php echo Yii::app()->request->baseUrl ?>"><i class="fa fa-tachometer"></i> <span>首页</span><div class="clearfix"></div></a></li>
+<header class="logo1">
+<a href="?r=home/index" class="sidebar-icon"> <span class="fa fa-bars">新闻首页</span> </a>
+</header>
+<div style="border-top:1px ridge rgba(255, 255, 255, 0.15)"></div>
+<div class="menu">
+		<ul id="menu" >
+			<li><a href="<?php echo Yii::app()->request->baseUrl ?>">
+				<i class="fa fa-tachometer"></i> 
+				<span>首页</span><div class="clearfix"></div></a></li>
 
 
-										 <li id="menu-academico" ><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=type/index"><i class="fa fa-envelope nav_icon"></i><span>分类管理</span><div class="clearfix"></div></a></li>
-									<li><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=plat/index"><i class="fa fa-picture-o" aria-hidden="true"></i><span>平台管理</span><div class="clearfix"></div></a></li>
-									<li id="menu-academico" ><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=theme/index"><i class="fa fa-bar-chart"></i><span>主题管理</span><div class="clearfix"></div></a></li>
-									 <li id="menu-academico" ><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span> 新闻管理</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
-										   <ul id="menu-academico-sub" >
-										   <li id="menu-academico-avaliacoes" ><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=news/look">新闻列表</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=news/add">标题录入</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=news/cj">新闻抓取</a></li>
-										  </ul>
-										</li>
-									
-									  <li id="menu-academico" >
-									  	<a href="#"><!-- <i class="fa fa-cogs" aria-hidden="true"></i> -->
-									  		<span>广告位</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
-										   <ul id="menu-academico-sub" >
-										   <li id="menu-academico-avaliacoes" ><a href="<?php echo Yii::app()->request->baseUrl?>/?r=plat/views">广告</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="<?php echo Yii::app()->request->baseUrl?>/?r=plat/vie">广告位</a></li>
-										  </ul>
-										</li>
-									 <li><a href="<?php echo Yii::app()->request->baseUrl?>/?r=plat/api"><i class="fa fa-table"></i>  
-									 	<span>API</span><div class="clearfix"></div>
-									 </a>
-									 </li>
-									<li><a href="maps.html"><i class="fa fa-map-marker" aria-hidden="true"></i>  <span>Maps</span><div class="clearfix"></div></a></li>
-							        <li id="menu-academico" ><a href="#"><i class="fa fa-file-text-o"></i>  <span>Pages</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
-										 <ul id="menu-academico-sub" >
-											<li id="menu-academico-boletim" ><a href="calendar.html">Calendar</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="signin.html">Sign In</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="signup.html">Sign Up</a></li>
+			 <li id="menu-academico" ><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=type/index"><i class="fa fa-envelope nav_icon"></i><span>分类管理</span><div class="clearfix"></div></a></li>
+		<li><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=plat/index"><i class="fa fa-picture-o" aria-hidden="true"></i><span>平台管理</span><div class="clearfix"></div></a></li>
+		<li id="menu-academico" ><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=theme/index"><i class="fa fa-bar-chart"></i><span>主题管理</span><div class="clearfix"></div></a></li>
+		 <li id="menu-academico" ><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span> 新闻管理</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+			   <ul id="menu-academico-sub" >
+			   <li id="menu-academico-avaliacoes" ><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=news/look">新闻列表</a></li>
+				<li id="menu-academico-avaliacoes" ><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=news/add">标题录入</a></li>
+				<li id="menu-academico-avaliacoes" ><a href="<?php echo Yii::app()->request->baseUrl ?>/?r=news/cj">新闻抓取</a></li>
+			  </ul>
+			</li>
+		
+		  <li id="menu-academico" >
+		  	<a href="#"><!-- <i class="fa fa-cogs" aria-hidden="true"></i> -->
+		  		<span>广告位</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+			   <ul id="menu-academico-sub" >
+			   <li id="menu-academico-avaliacoes" ><a href="<?php echo Yii::app()->request->baseUrl?>/?r=plat/views">广告</a></li>
+				<li id="menu-academico-avaliacoes" ><a href="<?php echo Yii::app()->request->baseUrl?>/?r=plat/vie">广告位</a></li>
+			  </ul>
+			</li>
+		
 
-
-										  </ul>
-									 </li>
-									
-								  </ul>
-								</div>
-							  </div>
+		
+	  </ul>
+	</div>
+  </div>

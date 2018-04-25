@@ -22,7 +22,7 @@
                         <td><?=$v['t_name']?></td>
                         <td>
                             <button><a href="<?php echo $this->createUrl('news/del')."/id/".$v['t_id']?>">删除</a>
-                                <button><a href="<?php echo $this->createUrl('news/show')."/id/".$v['t_id']?>">展示</a></button>
+                               
                              
                         </td>
                     </tr>

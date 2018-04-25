@@ -12,7 +12,8 @@ class HomeController extends CController
 		$cate = Api::actionGetName();
 		// var_dump($cate);die;
 		// echo "string";
-		$this->render('index',['cate'=>$cate]);
+		// $this->render('index',['cate'=>$cate]);
+		$this->render('inde',['cate'=>$cate]);
 	}
 	public function actionCate(){
 		// echo "string";die;
@@ -31,5 +32,12 @@ class HomeController extends CController
 
 
 	}
+	// public function actionInde(){
+	// 	$cate = Api::actionGetName();
+	// 	// var_dump($cate);die;
+	// 	// echo "string";
+	// 	$this->render('inde',['cate'=>$cate]);
+	// 	// $this->render('Inde'); 
+	// }
 
 }
